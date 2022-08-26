@@ -9,12 +9,11 @@
 
         public ITrackable Parse(string line)
         {
-            logger.LogInfo("Begin parsing");
 
-            
+            //reads through csv and creates a string array with a new index at each comma
             var cells = line.Split(',');
 
-            
+            //checks to make sure the string array produced by a line has 3 values
             if (cells.Length < 3)
             {
                 // Log that and return null
