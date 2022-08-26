@@ -69,7 +69,9 @@ namespace LoggingKata
                     }
                 }
             }
-            Console.WriteLine($"The two Taco Bells which are furthest away are {tacoBellA.Name} and {tacoBellB.Name}. The distance between them is {distance}");
+            Console.WriteLine();
+            Console.WriteLine($"The two Taco Bells which are furthest away are:\n{tacoBellA.Name} and \n{tacoBellB.Name}. " +
+                $"\nThe distance between them is {distance} meters");
         }
     }
 }
